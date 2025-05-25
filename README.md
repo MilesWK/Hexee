@@ -1,2 +1,4 @@
-# Hexee
-Get Hex codes in a pinch
+# Hexee 
+
+**By MilesWK**
+

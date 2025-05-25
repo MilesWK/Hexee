@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://cdn.glitch.global/c8187c70-377c-416c-9d14-809e5b69fc22/Hexee%20Logo%20(1).png?v=1722716086611" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Hexee</title>
+    <link rel="stylesheet" href="/style.css" />
+    <meta
+      name="description"
+      content="A simple tool allowing you to get hex codes of any color!"
+    />
+    <meta property="og:image" content="https://cdn.glitch.global/c8187c70-377c-416c-9d14-809e5b69fc22/Hexee%20Logo%20(1).png?v=1722716086611" />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+    <body>
+      <h1>
+        Hexee
+      </h1>
+
+      <p id="subtext">
+        🤏 Get hex codes in a pinch. 🤏
+      </p>
+      <p>
+        <b id="result">The selected color is: <span id="colorcode" onclick="copyHexCode()"></span></b>
+      </p>
+      <p id="copiedtext">
+        Copied to clipboard!
+      </p>
+      <div class="center-container">
+          <input type="color" id="color-picker" value="#000000">
+      </div> 
+      <br />
+      <div class="center-container">
+          <div class="line">
+      </div>
+      </div>
+      <div class="center-container">
+        <p id="favorite_text">
+          Favorite Color:
+        </p>
+      </div>
+      <div class="center-container">
+        <button id="favorite" onclick="set_fav()" title="Click to set a new favorite color!">
+          <span class="material-symbols-outlined">
+            favorite
+          </span>
+          
+        </button>
+        <button id="trycolor" onclick="try_color()" title="Click to try color!">
+          <span class="material-symbols-outlined">
+            page_info
+          </span>
+        </button>
+      </div>
+      <p id="url">
+      </p>
+    </body>
+</html>
